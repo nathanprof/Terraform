@@ -15,7 +15,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "mytfreggierg"
+  name     = "my-tf-reggierg"
   location = "uksouth"
 }
 
