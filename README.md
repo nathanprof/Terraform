@@ -55,7 +55,7 @@ sudo apt-get update
 - you must have an Azure subscription
 - you must have az cli installed in your VMware workstation running ubuntu linux
 - sudo apt install azure-cli (in case you don't have az cli installed, you can use this command to nstall it)
-- curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash (or this)
+- curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash (in case you don't have az cli installed, you can use this command to nstall it)
 ### Creating the resource-group in azure portal using terraform
 - terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
 - terraform init ( initialize a Terraform working directory)
