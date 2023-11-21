@@ -20,7 +20,7 @@ sudo tee /etc/apt/sources.list.d/hashicorp.list
 # Using terraform to create an nginx server in a docker container
 - Note: you must have docker installed already
 - systemctl status docker (to verify you have docker installed )
-## docker installation in case you don't already have
+## Docker installation in case you don't already have
 - ### Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
@@ -38,7 +38,7 @@ sudo apt-get update
 - sudo systemctl enable docker (enables it to start at boot time)
 - sudo systemctl start docker (starts the docker service)
 - sudo systemctl status docker (checks the status of the docker service)
-## using terraform to create nginx server
+## Using terraform to create nginx server
 - mkdir reggie-terrafoam-dock-tem (creates a directory)
 - cd reggie-terrafoam-dock-tem (navigate into thedirectory)
 - vim dock.tf (creates a file and paste contents in dock.tf into it)
@@ -51,5 +51,23 @@ sudo apt-get update
 - docker images
 - docker rmi IMAGE_ID
 # Using terraform to create a resource-group in Ms Azure portal
-- 
-- 
+## Prerequisites
+- you must have an Azure subscription
+- you must have az cli installed in your VMware workstation running ubuntu linux
+- sudo apt install azure-cli (in case you don't have az cli installed, you can use this command to nstall it)
+- curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash (or this)
+### Creating the resource-group in azure portal using terraform
+- - terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
+- terraform init ( initialize a Terraform working directory)
+- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
+- terraform destroy -auto-approve 
+# Using terraform to create a linux vm in Ms Azure portal
+- terraform init ( initialize a Terraform working directory)
+- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
+- terraform destroy -auto-approve
+  # Using terraform to create a windows vm in Ms Azure portal
+- terraform init ( initialize a Terraform working directory)
+- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
+- terraform destroy -auto-approve
+
+
