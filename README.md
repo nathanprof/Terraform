@@ -41,15 +41,15 @@ sudo apt-get update
 ## Using terraform to create nginx server
 - mkdir reggie-terrafoam-dock-tem (creates a directory)
 - cd reggie-terrafoam-dock-tem (navigate into thedirectory)
-- vim dock.tf (creates a file and paste contents in dock.tf into it)
+- vim dock.tf (creates a file and paste contents in dock.tf into it by  pressing thei key then after pasting press esckey then shift + :wq and press enter to exit and save)
 - terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
 - terraform init ( initialize a Terraform working directory)
-- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
-- docker ps ()
-- http://192.168.4.132:8000/ or http://localhost:8000/
-- terraform destroy -auto-approve
-- docker images
-- docker rmi IMAGE_ID
+- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation note: risky in production you can leave the option out in production)
+- docker ps (lists all running containers)
+- http://192.168.4.132:8000/ or http://localhost:8000/ (to test the nginx server on the host as in the earlier command my vmware ip is 192.168.4.132 or locally in thevmare environment)
+- terraform destroy -auto-approve (will automatically approve the destruction plan, bypassing the prompt for confirmation)
+- docker images (to  view the docker images)
+- docker rmi IMAGE_ID (to remove one or more images from your local Docker environment)
 # Using terraform to create a resource-group in Ms Azure portal
 ## Prerequisites
 - you must have an Azure subscription
@@ -57,17 +57,26 @@ sudo apt-get update
 - sudo apt install azure-cli (in case you don't have az cli installed, you can use this command to nstall it)
 - curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash (in case you don't have az cli installed, you can use this command to nstall it)
 ### Creating the resource-group in azure portal using terraform
+- mkdir terraform-rg
+- cd terraform-rg
+- vim main.tf (creates a file and paste contents in dock.tf into it by  pressing thei key then after pasting press esckey then shift + :wq and press enter to exit and save)
 - terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
 - terraform init ( initialize a Terraform working directory)
 - terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
-- terraform destroy -auto-approve 
+- terraform destroy -auto-approve (will automatically approve the destruction plan, bypassing the prompt for confirmation)
 # Using terraform to create a linux vm in Ms Azure portal
-- terraform init ( initialize a Terraform working directory)
-- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
+- mkdir regtfvm.tf
+- cd regtfvm.tf
+- terraform plan
+- terraform init 
+- terraform apply -auto-approve 
 - terraform destroy -auto-approve
 # Using terraform to create a windows vm in Ms Azure portal
-- terraform init ( initialize a Terraform working directory)
-- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
+- mkdir regwintf.tf
+- cd regwintf.tf
+- terraform plan
+- terraform init 
+- terraform apply -auto-approve 
 - terraform destroy -auto-approve
 
 
