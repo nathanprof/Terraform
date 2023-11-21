@@ -57,7 +57,7 @@ sudo apt-get update
 - sudo apt install azure-cli (in case you don't have az cli installed, you can use this command to nstall it)
 - curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash (or this)
 ### Creating the resource-group in azure portal using terraform
-- - terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
+- terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
 - terraform init ( initialize a Terraform working directory)
 - terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
 - terraform destroy -auto-approve 
