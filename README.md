@@ -41,7 +41,7 @@ sudo apt-get update
 ## Using terraform to create nginx server
 - mkdir reggie-terrafoam-dock-tem (creates a directory)
 - cd reggie-terrafoam-dock-tem (navigate into thedirectory)
-- vim dock.tf (creates a file and paste contents in dock.tf into it by  pressing thei key then after pasting press esckey then shift + :wq and press enter to exit and save)
+- vim dock.tf (creates a file and paste contents in dock.tf into it by  pressing the key then after pasting press esc key then shift + :wq and press enter to exit and save)
 - terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
 - terraform init ( initialize a Terraform working directory)
 - terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation note: risky in production you can leave the option out in production)
