@@ -39,17 +39,17 @@ sudo apt-get update
 - sudo systemctl start docker (starts the docker service)
 - sudo systemctl status docker (checks the status of the docker service)
 ## using terraform to create nginx server
-- mkdir reggie-terrafoam-dock-tem
-- cd reggie-terrafoam-dock-tem
-- vim dock.tf
-- terraform plan
-- terraform init
-- terraform apply -auto-approve
-- docker ps
+- mkdir reggie-terrafoam-dock-tem (creates a directory)
+- cd reggie-terrafoam-dock-tem (navigate into thedirectory)
+- vim dock.tf (creates a file and paste contents in dock.tf into it)
+- terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
+- terraform init ( initialize a Terraform working directory)
+- terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
+- docker ps ()
 - http://192.168.4.132:8000/ or http://localhost:8000/
 - terraform destroy -auto-approve
 - docker images
 - docker rmi IMAGE_ID
-# Using  terraform to create a resource-group in Ms Azure portal
+# Using terraform to create a resource-group in Ms Azure portal
 - 
 - 
