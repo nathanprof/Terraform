@@ -59,21 +59,23 @@ sudo apt-get update
 ### Creating the resource-group in azure portal using terraform
 - mkdir terraform-rg
 - cd terraform-rg
-- vim main.tf (creates a file and paste contents in dock.tf into it by  pressing thei key then after pasting press esckey then shift + :wq and press enter to exit and save)
+- vim main.tf (creates a file and paste contents in dock.tf into it by  pressing thei key then after pasting press esckey then shift + :wq and press enter to save and exit)
 - terraform plan (describes the changes Terraform will make to your infrastructure to bring it into the desired state specified by your configuration files)
 - terraform init ( initialize a Terraform working directory)
 - terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
 - terraform destroy -auto-approve (will automatically approve the destruction plan, bypassing the prompt for confirmation)
 # Using terraform to create a linux vm in Ms Azure portal
-- mkdir regtfvm.tf
-- cd regtfvm.tf
+- mkdir terraform-lin-vm
+- cd terraform-lin-vm
+- vim regtfvm.tf
 - terraform plan
 - terraform init 
 - terraform apply -auto-approve 
 - terraform destroy -auto-approve
 # Using terraform to create a windows vm in Ms Azure portal
-- mkdir regwintf.tf
-- cd regwintf.tf
+- mkdir terraform-win-vm
+- cd terraform-win-vm
+- vim regwintf.tf
 - terraform plan
 - terraform init 
 - terraform apply -auto-approve 
