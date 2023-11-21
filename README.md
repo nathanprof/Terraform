@@ -65,7 +65,7 @@ sudo apt-get update
 - terraform init ( initialize a Terraform working directory)
 - terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
 - terraform destroy -auto-approve
-  # Using terraform to create a windows vm in Ms Azure portal
+# Using terraform to create a windows vm in Ms Azure portal
 - terraform init ( initialize a Terraform working directory)
 - terraform apply -auto-approve (apply Terraform configuration changes without prompting for user confirmation)
 - terraform destroy -auto-approve
