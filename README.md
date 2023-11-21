@@ -69,8 +69,10 @@ sudo apt-get update
 - cd terraform-lin-vm
 - vim regtfvm.tf
 - terraform plan
-- terraform init 
-- terraform apply -auto-approve 
+- terraform init
+- terraform apply -auto-approve
+- terraform show (Inspect the current state )
+- terraform state list (o review the information in your state file)
 - terraform destroy -auto-approve
 # Using terraform to create a windows vm in Ms Azure portal
 - mkdir terraform-win-vm
@@ -78,7 +80,9 @@ sudo apt-get update
 - vim regwintf.tf
 - terraform plan
 - terraform init 
-- terraform apply -auto-approve 
+- terraform apply -auto-approve
+- terraform show (Inspect the current state )
+- terraform state list (o review the information in your state file)
 - terraform destroy -auto-approve
 
 
