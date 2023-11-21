@@ -35,6 +35,21 @@ echo \
 sudo apt-get update
 - sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 - sudo usermod -aG docker $USER && newgrp docker
-- systemctl enable docker
-- systemctl start docker
-- systemctl sattus docker
+- sudo systemctl enable docker (enables it to start at boot time)
+- sudo systemctl start docker (starts the docker service)
+- sudo systemctl status docker (checks the status of the docker service)
+## using terraform to create nginx server
+- mkdir reggie-terrafoam-dock-tem
+- cd reggie-terrafoam-dock-tem
+- vim dock.tf
+- terraform plan
+- terraform init
+- terraform apply -auto-approve
+- docker ps
+- http://192.168.4.132:8000/ or http://localhost:8000/
+- terraform destroy -auto-approve
+- docker images
+- docker rmi IMAGE_ID
+# Using  terraform to create a resource-group in Ms Azure portal
+- 
+- 
